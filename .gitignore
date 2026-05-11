@@ -3,3 +3,11 @@
 .dolt/
 *.db
 .beads-credential-key
+
+# Runtime / operational files
+.beads/locks/
+.runtime/
+.beads/dolt-server.port
+.beads/last-touched
+.beads/.local_version
+.beads/embeddeddolt/
