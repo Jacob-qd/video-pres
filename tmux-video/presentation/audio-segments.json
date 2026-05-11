@@ -1,0 +1,116 @@
+[
+  {
+    "chapter": "coldopen",
+    "step": 1,
+    "text": "你每天要在终端和编辑器之间切多少次？",
+    "audio": "coldopen/1.mp3"
+  },
+  {
+    "chapter": "coldopen",
+    "step": 2,
+    "text": "数过吗？我猜没有。这个动作一天重复几百次。每次切换大概三到五秒，一天下来，光是找鼠标就能吃掉你一个多小时。",
+    "audio": "coldopen/2.mp3"
+  },
+  {
+    "chapter": "coldopen",
+    "step": 3,
+    "text": "更麻烦的是，每次切换都会打断注意力。你刚进入心流状态，手一离开键盘，思路就断了。",
+    "audio": "coldopen/3.mp3"
+  },
+  {
+    "chapter": "what-is",
+    "step": 1,
+    "text": "所以 tmux 是什么？它是一个终端复用器。说人话就是：你在一个终端窗口里，能同时跑多个程序。",
+    "audio": "what-is/1.mp3"
+  },
+  {
+    "chapter": "what-is",
+    "step": 2,
+    "text": "想象这样一个场景。你打开 Vim 写代码，旁边开一个窗口跑测试。再切一个窗口连数据库。所有东西都在同一个环境里，你按一个快捷键就能在它们之间瞬移。全程不用碰鼠标。",
+    "audio": "what-is/2.mp3"
+  },
+  {
+    "chapter": "what-is",
+    "step": 3,
+    "text": "tmux 的核心就三个概念，记住这三个词就行。会话、窗口、面板。",
+    "audio": "what-is/3.mp3"
+  },
+  {
+    "chapter": "what-is",
+    "step": 4,
+    "text": "会话是最大的容器。里面可以有很多窗口，每个窗口就是一个全屏标签页。窗口又可以切成多个面板，上下左右并排显示。",
+    "audio": "what-is/4.mp3"
+  },
+  {
+    "chapter": "what-is",
+    "step": 5,
+    "text": "比如左边面板跑编辑器，右边跑日志。上面是代码，下面是终端命令。你自己说了算。",
+    "audio": "what-is/5.mp3"
+  },
+  {
+    "chapter": "killer-feature",
+    "step": 1,
+    "text": "但 tmux 真正让人上瘾的，不是这些花里胡哨的分屏。是分离和附着。",
+    "audio": "killer-feature/1.mp3"
+  },
+  {
+    "chapter": "killer-feature",
+    "step": 2,
+    "text": "你在公司电脑上开了一堆窗口和面板，下班了，按 PREFIX d 分离。会话还在服务器上跑着。回家 tmux attach，整个环境原封不动出现在你面前。代码还在那行没写完的注释后面，测试还在跑，数据库连接也没断。",
+    "audio": "killer-feature/2.mp3"
+  },
+  {
+    "chapter": "killer-feature",
+    "step": 3,
+    "text": "这就像给终端开了个存档功能。存的不是文件，是整个工作现场。默认 CTRL-b 当命令前缀？像在练手指瑜伽。换成 CTRL-a，三行配置搞定。",
+    "audio": "killer-feature/3.mp3"
+  },
+  {
+    "chapter": "killer-feature",
+    "step": 4,
+    "text": "还有状态栏。默认底部绿栏信息杂乱，移到顶部、改深色、精简信息，十行配置搞定。甚至还能让当前激活的窗口高亮显示，一眼就知道自己在哪。",
+    "audio": "killer-feature/4.mp3"
+  },
+  {
+    "chapter": "workflow",
+    "step": 1,
+    "text": "如果你跟我一样，每次开新项目都要手动开终端、切目录、起服务，tmux 能帮你自动化。写一个 shell 脚本，或者装个 tmuxinator。一条命令，整个开发环境就搭好了。目录切好了，环境变量设好了，你坐下来直接写代码就行。",
+    "audio": "workflow/1.mp3"
+  },
+  {
+    "chapter": "workflow",
+    "step": 2,
+    "text": "有人可能会说，我用 iTerm2 的标签页不也一样吗？不一样。iTerm2 的标签页在你关掉程序的那一刻就全没了。tmux 的会话可以永远挂在后台。",
+    "audio": "workflow/2.mp3"
+  },
+  {
+    "chapter": "workflow",
+    "step": 3,
+    "text": "2010 年 tmux 刚出来的时候，很多人以为它只是 GNU Screen 的替代品。十五年后回头看，它早就不是替代品了。它是一个平台。你可以在它的基础上搭菜单、做弹窗、写 hooks、装插件。第三版还加了可配置菜单和弹出窗口。",
+    "audio": "workflow/3.mp3"
+  },
+  {
+    "chapter": "workflow",
+    "step": 4,
+    "text": "Brian Hogan 在书里说的挺对的：刚开始你会觉得 tmux 是个工具。用久了，它会成为你工作流里不可替代的一部分。",
+    "audio": "workflow/4.mp3"
+  },
+  {
+    "chapter": "closing",
+    "step": 1,
+    "text": "如果你还没试过，花二十分钟装一个、配一下前缀键、分个屏、再分离附着一次。",
+    "audio": "closing/1.mp3"
+  },
+  {
+    "chapter": "closing",
+    "step": 2,
+    "text": "体会一下那种手不离开键盘就能控制一切的感觉。回不去了。真的。",
+    "audio": "closing/2.mp3"
+  },
+  {
+    "chapter": "closing",
+    "step": 3,
+    "text": "去 GitHub 搜 tmux，安装就一行命令。配置模板我放评论区了，自取。",
+    "audio": "closing/3.mp3"
+  }
+]

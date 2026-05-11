@@ -1,0 +1,410 @@
+/* ─── Chapter 4: workflow ─── */
+/* prefix: wf- */
+
+.wf-scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+}
+
+/* ── Step 0: Automation ── */
+.wf-step0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+  padding: 0 160px;
+}
+
+.wf-label {
+  font-size: 16px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  font-weight: 600;
+}
+
+.wf-title {
+  font-size: 64px;
+  font-weight: 800;
+  color: var(--text);
+  text-shadow: 0 0 30px var(--accent-glow);
+  font-family: var(--font-display-cn);
+  letter-spacing: -0.01em;
+}
+
+.wf-panels {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 950px;
+}
+
+.wf-panel {
+  flex: 1;
+  border: 2px solid var(--rule);
+  background: var(--surface-2);
+  padding: 32px;
+  box-shadow: var(--card-shadow);
+}
+
+.wf-panel-tag {
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--rule);
+  font-weight: 600;
+}
+
+.wf-panel-content {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-2);
+  font-family: var(--font-mono);
+}
+
+.wf-panel-ok {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.wf-kw { color: var(--accent); font-weight: 600; }
+.wf-str { color: #c75b39; }
+.wf-ok { color: var(--accent); font-weight: 700; }
+.wf-mute { color: var(--text-mute); }
+
+.wf-cmd {
+  font-size: 22px;
+  color: var(--accent);
+  padding: 16px 32px;
+  border: 2px solid var(--accent);
+  background: var(--accent-soft);
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  box-shadow: 0 0 20px rgba(255, 74, 43, 0.1);
+}
+
+/* Shortcuts panel */
+.wf-shortcuts-panel {
+  margin-top: 32px;
+  padding: 28px 36px;
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  width: 100%;
+  max-width: 800px;
+  box-shadow: var(--card-shadow);
+}
+
+.wf-short-label {
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.wf-short-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.wf-short-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--surface-3);
+  border: 1px solid var(--rule);
+}
+
+.wf-kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 12px;
+  background: var(--surface);
+  border: 1px solid var(--text-faint);
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: var(--font-mono);
+  color: var(--text);
+  font-weight: 600;
+  box-shadow: 0 2px 0 var(--text-faint);
+  white-space: nowrap;
+}
+
+.wf-kbd-desc {
+  font-size: 14px;
+  color: var(--text-mute);
+  font-weight: 500;
+}
+
+/* ── Step 1: iTerm2 vs tmux ── */
+.wf-step1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+  padding: 0 140px;
+}
+
+.wf-vs-label {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--text);
+  font-family: var(--font-display-cn);
+  letter-spacing: -0.01em;
+}
+
+.wf-vs-row {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.wf-vs-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.wf-vs-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.wf-vs-window {
+  width: 100%;
+  border: 2px solid var(--rule);
+  background: var(--surface-2);
+  box-shadow: var(--card-shadow);
+}
+
+.wf-vs-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 10px 16px;
+  border-bottom: 2px solid var(--rule);
+  background: var(--surface-3);
+}
+
+.wf-vs-tab {
+  padding: 6px 16px;
+  font-size: 14px;
+  color: var(--text-mute);
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  font-weight: 500;
+}
+
+.wf-vs-tab-on {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  font-weight: 600;
+}
+
+.wf-vs-body {
+  padding: 48px 32px;
+  text-align: center;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.wf-vs-skull {
+  font-size: 64px;
+  color: #e85d4a;
+}
+
+.wf-vs-dead {
+  font-size: 22px;
+  color: #e85d4a;
+  font-weight: 600;
+}
+
+.wf-vs-pulse {
+  font-size: 48px;
+  color: var(--accent);
+  text-shadow: 0 0 24px var(--accent-glow);
+  animation: wf-pulse 2s ease-in-out infinite;
+}
+
+@keyframes wf-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.wf-vs-live {
+  font-size: 22px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.wf-vs-res {
+  font-size: 16px;
+  color: var(--text-mute);
+  font-weight: 500;
+}
+
+.wf-vs-divider {
+  font-size: 18px;
+  color: var(--text-faint);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* ── Step 2: Timeline ── */
+.wf-step2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  width: 100%;
+  padding: 0 120px;
+}
+
+.wf-timeline-label {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--text);
+  font-family: var(--font-display-cn);
+  letter-spacing: -0.01em;
+}
+
+.wf-timeline {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.wf-tl-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0 56px;
+  min-width: 220px;
+}
+
+.wf-tl-year {
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--text);
+  font-family: var(--font-display-en);
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+.wf-tl-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--text-faint);
+  border: 3px solid var(--surface);
+}
+
+.wf-tl-now .wf-tl-dot {
+  background: var(--accent);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.wf-tl-event {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-2);
+  font-family: var(--font-display-cn);
+}
+
+.wf-tl-now .wf-tl-event {
+  color: var(--accent);
+}
+
+.wf-tl-desc {
+  font-size: 18px;
+  color: var(--text-mute);
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.wf-tl-line {
+  width: 80px;
+  height: 3px;
+  background: var(--rule);
+  margin-top: 76px;
+}
+
+.wf-tl-note {
+  font-size: 28px;
+  color: var(--text-2);
+  text-align: center;
+  margin-top: 12px;
+  font-weight: 600;
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+/* ── Step 3: Quote ── */
+.wf-step3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+  padding: 0 160px;
+}
+
+.wf-quote-mark {
+  font-size: 160px;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.25;
+  font-family: var(--font-display-en);
+  font-style: italic;
+  margin-bottom: -60px;
+}
+
+.wf-quote {
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.4;
+  font-family: var(--font-display-cn);
+  max-width: 900px;
+  text-shadow: 0 0 20px var(--accent-glow);
+}
+
+.wf-quote-author {
+  font-size: 24px;
+  color: var(--text-mute);
+  margin-top: 24px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.wf-quote-book {
+  font-size: 18px;
+  color: var(--text-faint);
+  margin-top: 8px;
+}

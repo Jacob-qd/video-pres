@@ -1,0 +1,309 @@
+/* ─── Chapter 1: coldopen ─── */
+/* prefix: co- */
+
+.co-scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+}
+
+/* ── Step 0: Hook question ── */
+.co-step0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  text-align: center;
+  padding: 0 100px;
+  width: 100%;
+}
+
+.co-question {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.co-qtext {
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  font-family: var(--font-display-cn);
+}
+
+.co-cursor {
+  display: inline-block;
+  width: 6px;
+  height: 100px;
+  background: var(--accent);
+  animation: co-blink 1s step-end infinite;
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+@keyframes co-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.co-sub {
+  font-size: 28px;
+  color: var(--text-mute);
+  letter-spacing: 0.03em;
+  opacity: 0;
+  animation: co-fade-up 0.8s 0.6s var(--ease-quart) forwards;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+@keyframes co-fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Step 1: Counter + timeline ── */
+.co-step1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  width: 100%;
+  padding: 0 120px;
+}
+
+.co-math {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.co-counter {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+}
+
+.co-num {
+  font-size: 220px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--accent);
+  font-family: var(--font-display-en);
+  font-style: italic;
+  text-shadow: 0 0 60px var(--accent-glow);
+  letter-spacing: -0.03em;
+}
+
+.co-unit {
+  font-size: 48px;
+  color: var(--text-2);
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.co-each {
+  font-size: 32px;
+  color: var(--text-mute);
+  font-family: var(--font-body);
+}
+
+.co-rule {
+  width: 280px;
+  height: 0;
+  border-top: 3px solid var(--accent);
+  margin: 16px 0;
+  opacity: 0.7;
+  box-shadow: 0 0 16px var(--accent-glow);
+}
+
+.co-result {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+}
+
+.co-eq {
+  font-size: 64px;
+  color: var(--text-mute);
+  font-family: var(--font-display-en);
+  font-style: italic;
+}
+
+.co-hours {
+  font-size: 96px;
+  font-weight: 800;
+  color: var(--accent);
+  text-shadow: 0 0 40px var(--accent-glow);
+  font-family: var(--font-display-en);
+  font-style: italic;
+}
+
+.co-bar-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 120px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.co-bar {
+  flex: 1;
+  background: var(--accent);
+  opacity: 0;
+  height: 15%;
+  animation: co-bar-rise 0.5s var(--ease-quart) forwards;
+}
+
+.co-bar:nth-child(3n) { height: 35%; }
+.co-bar:nth-child(5n) { height: 60%; }
+.co-bar:nth-child(7n) { height: 45%; }
+.co-bar:nth-child(11n) { height: 80%; }
+.co-bar:nth-child(13n) { height: 100%; }
+
+@keyframes co-bar-rise {
+  from { opacity: 0; transform: scaleY(0); }
+  to   { opacity: 0.55; transform: scaleY(1); }
+}
+
+.co-bar-label {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  font-size: 18px;
+  color: var(--text-mute);
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.co-label-mid {
+  color: var(--text-2);
+  font-weight: 600;
+}
+
+.co-detail-row {
+  display: flex;
+  gap: 64px;
+  margin-top: 32px;
+}
+
+.co-detail-item {
+  text-align: center;
+}
+
+.co-detail-num {
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--accent);
+  font-family: var(--font-display-en);
+  font-style: italic;
+  line-height: 1;
+}
+
+.co-detail-label {
+  font-size: 16px;
+  color: var(--text-mute);
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+/* ── Step 2: Flow wave ── */
+.co-step2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  width: 100%;
+  padding: 0 100px;
+}
+
+.co-flow-title {
+  font-size: 22px;
+  color: var(--text-mute);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.co-wave {
+  width: 100%;
+  height: 360px;
+  overflow: visible;
+}
+
+.co-wave-path {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation: co-draw-wave 1.5s 0.3s var(--ease-quart) forwards;
+  stroke-width: 3;
+}
+
+@keyframes co-draw-wave {
+  to { stroke-dashoffset: 0; }
+}
+
+.co-wave-fill {
+  opacity: 0;
+  animation: co-fade-in 0.8s 1s var(--ease-quart) forwards;
+}
+
+.co-drop-line {
+  opacity: 0;
+  animation: co-fade-in 0.5s 1.2s var(--ease-quart) forwards;
+  stroke-width: 2;
+}
+
+.co-drop-dot {
+  opacity: 0;
+  animation: co-pulse-in 0.5s 1.4s var(--ease-quart) forwards;
+}
+
+@keyframes co-pulse-in {
+  0%   { opacity: 0; transform: scale(0); }
+  60%  { opacity: 1; transform: scale(1.5); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.co-wave-label {
+  font-size: 18px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  opacity: 0;
+  animation: co-fade-in 0.6s 0.8s var(--ease-quart) forwards;
+}
+
+.co-wave-drop {
+  opacity: 0;
+  animation: co-fade-in 0.6s 1.6s var(--ease-quart) forwards;
+}
+
+@keyframes co-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.co-flow-footer {
+  font-size: 36px;
+  color: var(--text);
+  text-align: center;
+  line-height: 1.5;
+  max-width: 800px;
+  font-weight: 600;
+  opacity: 0;
+  animation: co-fade-up 0.8s 1.8s var(--ease-quart) forwards;
+}
+
+.co-flow-sub {
+  font-size: 22px;
+  color: var(--text-mute);
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.6;
+  opacity: 0;
+  animation: co-fade-up 0.8s 2.2s var(--ease-quart) forwards;
+}

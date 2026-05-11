@@ -1,0 +1,404 @@
+/* ─── Chapter 3: killer-feature ─── */
+/* prefix: kf- */
+
+.kf-scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+}
+
+/* ── Step 0: Title ── */
+.kf-step0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  text-align: center;
+  padding: 0 120px;
+}
+
+.kf-label {
+  font-size: 16px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  font-weight: 600;
+}
+
+.kf-title {
+  font-size: 130px;
+  font-weight: 800;
+  color: var(--accent);
+  text-shadow: 0 0 50px var(--accent-glow);
+  line-height: 1.05;
+  font-family: var(--font-display-cn);
+  letter-spacing: -0.02em;
+}
+
+.kf-amp {
+  color: var(--text-mute);
+  font-weight: 400;
+}
+
+.kf-sub {
+  font-size: 32px;
+  color: var(--text-2);
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+/* ── Step 1: Detach/attach flow ── */
+.kf-step1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+  padding: 0 120px;
+}
+
+.kf-flow {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.kf-flow-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.kf-flow-box {
+  padding: 40px 48px;
+  border: 2px solid var(--rule);
+  background: var(--surface-2);
+  min-width: 320px;
+  box-shadow: var(--card-shadow);
+}
+
+.kf-flow-title {
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--rule);
+  font-weight: 600;
+}
+
+.kf-flow-items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.kf-flow-item {
+  font-size: 20px;
+  color: var(--text-2);
+  font-family: var(--font-mono);
+  padding: 8px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.kf-flow-item:last-child {
+  border-bottom: none;
+}
+
+.kf-flow-cmd {
+  font-size: 16px;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  padding: 12px 24px;
+  border: 2px solid var(--accent);
+  background: var(--accent-soft);
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.kf-flow-arrow {
+  font-size: 56px;
+  color: var(--accent);
+  text-shadow: 0 0 20px var(--accent-glow);
+  font-weight: 300;
+}
+
+.kf-flow-note {
+  font-size: 24px;
+  color: var(--text-mute);
+  text-align: center;
+  max-width: 700px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* Shortcuts banner */
+.kf-shortcuts-banner {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  justify-content: center;
+}
+
+.kf-shortcut-kbd {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 24px;
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  box-shadow: var(--card-shadow);
+}
+
+.kf-kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  background: var(--surface-3);
+  border: 1px solid var(--text-faint);
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: var(--font-mono);
+  color: var(--text);
+  font-weight: 600;
+  box-shadow: 0 2px 0 var(--text-faint);
+}
+
+.kf-kbd-plus {
+  font-size: 14px;
+  color: var(--text-mute);
+  font-weight: 500;
+}
+
+.kf-kbd-desc {
+  font-size: 15px;
+  color: var(--text-mute);
+  margin-left: 6px;
+  font-weight: 500;
+}
+
+/* Tips */
+.kf-shortcuts-tip {
+  margin-top: 32px;
+  padding: 24px 32px;
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  width: 100%;
+  max-width: 560px;
+  box-shadow: var(--card-shadow);
+}
+
+.kf-tip-label {
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.kf-tip-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.kf-tip-row:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Step 2: Config comparison ── */
+.kf-step2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  width: 100%;
+  padding: 0 140px;
+}
+
+.kf-config-title {
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--text);
+  font-family: var(--font-display-cn);
+}
+
+.kf-config-row {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.kf-config-bad,
+.kf-config-good {
+  padding: 44px 52px;
+  border: 2px solid var(--rule);
+  background: var(--surface-2);
+  text-align: center;
+  min-width: 280px;
+  box-shadow: var(--card-shadow);
+}
+
+.kf-config-bad {
+  border-color: rgba(255, 80, 80, 0.4);
+}
+
+.kf-config-good {
+  border-color: var(--accent);
+  box-shadow: 0 0 30px rgba(255, 74, 43, 0.1);
+}
+
+.kf-config-label {
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.kf-config-key {
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--text);
+  font-family: var(--font-mono);
+  margin-bottom: 12px;
+}
+
+.kf-config-bad .kf-config-key {
+  color: #e85d4a;
+}
+
+.kf-config-good .kf-config-key {
+  color: var(--accent);
+  text-shadow: 0 0 20px var(--accent-glow);
+}
+
+.kf-config-desc {
+  font-size: 18px;
+  color: var(--text-mute);
+}
+
+.kf-config-vs {
+  font-size: 36px;
+  color: var(--text-faint);
+  font-weight: 300;
+}
+
+.kf-code-block {
+  padding: 32px 44px;
+  border: 2px solid var(--rule);
+  background: var(--surface-3);
+  font-family: var(--font-mono);
+  font-size: 22px;
+  line-height: 2;
+  min-width: 480px;
+  box-shadow: var(--card-shadow);
+}
+
+.kf-code-line {
+  color: var(--text-2);
+}
+
+.kf-code-comment {
+  color: var(--text-faint);
+}
+
+/* ── Step 3: Status bar ── */
+.kf-step3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+  padding: 0 140px;
+}
+
+.kf-bar-title {
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--text);
+  font-family: var(--font-display-cn);
+}
+
+.kf-bar-row {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 950px;
+}
+
+.kf-bar-before,
+.kf-bar-after {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.kf-bar-label {
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  font-weight: 600;
+}
+
+.kf-bar-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-family: var(--font-mono);
+  overflow: hidden;
+}
+
+.kf-bar-old {
+  background: #e8e0ce;
+  border: 2px solid #c8c0ae;
+  color: #8a8474;
+}
+
+.kf-bar-new {
+  background: var(--surface-2);
+  border: 2px solid var(--accent);
+  color: var(--text-2);
+  box-shadow: 0 0 20px rgba(255, 74, 43, 0.08);
+}
+
+.kf-bar-seg {
+  padding: 4px 12px;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.kf-bar-active {
+  color: var(--accent);
+  background: var(--accent-soft);
+  font-weight: 600;
+}
+
+.kf-bar-time {
+  margin-left: auto;
+  color: var(--text-mute);
+}
+
+.kf-bar-load {
+  color: var(--text-mute);
+}
+
+.kf-bar-note {
+  font-size: 24px;
+  color: var(--text-mute);
+  text-align: center;
+  margin-top: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}

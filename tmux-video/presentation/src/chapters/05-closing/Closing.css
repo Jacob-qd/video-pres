@@ -1,0 +1,205 @@
+/* ─── Chapter 5: closing ─── */
+/* prefix: cl- */
+
+.cl-scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+}
+
+/* ── Step 0: Three steps ── */
+.cl-step0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+  width: 100%;
+  padding: 0 140px;
+}
+
+.cl-headline {
+  font-size: 96px;
+  font-weight: 800;
+  color: var(--accent);
+  text-shadow: 0 0 40px var(--accent-glow);
+  font-family: var(--font-display-cn);
+  letter-spacing: -0.02em;
+}
+
+.cl-steps {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.cl-step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 52px 56px;
+  border: 2px solid var(--rule);
+  background: var(--surface-2);
+  min-width: 220px;
+  box-shadow: var(--card-shadow);
+}
+
+.cl-step-num {
+  font-size: 72px;
+  font-weight: 800;
+  color: var(--accent);
+  text-shadow: 0 0 20px var(--accent-glow);
+  font-family: var(--font-display-en);
+  font-style: italic;
+}
+
+.cl-step-text {
+  font-size: 26px;
+  color: var(--text);
+  font-weight: 600;
+  font-family: var(--font-display-cn);
+}
+
+.cl-step-arrow {
+  font-size: 36px;
+  color: var(--text-faint);
+  font-weight: 300;
+}
+
+/* ── Step 1: Keyboard ── */
+.cl-step1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  width: 100%;
+}
+
+.cl-keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px;
+  border: 2px solid var(--rule);
+  background: var(--surface-2);
+  box-shadow: var(--card-shadow);
+}
+
+.cl-kb-row {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.cl-key {
+  width: 56px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--rule);
+  background: var(--surface-3);
+  font-size: 14px;
+  color: var(--text-mute);
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
+.cl-key-space {
+  width: 340px;
+}
+
+.cl-feel {
+  font-size: 64px;
+  font-weight: 800;
+  color: var(--text);
+  text-shadow: 0 0 30px var(--accent-glow);
+  text-align: center;
+  font-family: var(--font-display-cn);
+  letter-spacing: -0.01em;
+}
+
+.cl-feel-sub {
+  font-size: 32px;
+  color: var(--text-2);
+  font-weight: 600;
+}
+
+/* ── Step 2: Book + CTA ── */
+.cl-step2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  text-align: center;
+  padding: 0 140px;
+  width: 100%;
+}
+
+.cl-book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 56px 80px;
+  border: 2px solid var(--accent);
+  background: var(--surface-2);
+  box-shadow: 0 0 50px rgba(255, 74, 43, 0.1);
+  max-width: 700px;
+  width: 100%;
+}
+
+.cl-book-title {
+  font-size: 80px;
+  font-weight: 800;
+  color: var(--accent);
+  text-shadow: 0 0 30px var(--accent-glow);
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+}
+
+.cl-book-sub {
+  font-size: 32px;
+  color: var(--text-2);
+  font-weight: 600;
+}
+
+.cl-book-author {
+  font-size: 20px;
+  color: var(--text-mute);
+  letter-spacing: 0.1em;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.cl-book-pub {
+  font-size: 16px;
+  color: var(--text-faint);
+  margin-top: 4px;
+}
+
+.cl-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cl-cta-line {
+  font-size: 22px;
+  color: var(--accent);
+  padding: 16px 32px;
+  border: 2px solid var(--accent);
+  background: var(--accent-soft);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  box-shadow: 0 0 20px rgba(255, 74, 43, 0.1);
+}
+
+.cl-cta-hint {
+  font-size: 18px;
+  color: var(--text-mute);
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}

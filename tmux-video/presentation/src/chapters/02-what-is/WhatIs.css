@@ -1,0 +1,407 @@
+/* ─── Chapter 2: what-is ─── */
+/* prefix: wi- */
+
+.wi-scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+}
+
+/* ── Step 0: Definition ── */
+.wi-step0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  padding: 0 120px;
+  width: 100%;
+}
+
+.wi-label {
+  font-size: 16px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  font-weight: 600;
+}
+
+.wi-title {
+  font-size: 140px;
+  font-weight: 800;
+  color: var(--accent);
+  text-shadow: 0 0 50px var(--accent-glow);
+  line-height: 1.05;
+  font-family: var(--font-display-cn);
+  letter-spacing: -0.02em;
+}
+
+.wi-sub {
+  font-size: 40px;
+  color: var(--text-2);
+  font-weight: 600;
+}
+
+.wi-desc {
+  font-size: 26px;
+  color: var(--text-mute);
+  line-height: 1.6;
+  max-width: 750px;
+  margin-top: 24px;
+}
+
+/* ── Step 1: Terminal mockup ── */
+.wi-step1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  padding: 0 140px;
+}
+
+.wi-term-mockup {
+  width: 100%;
+  max-width: 1100px;
+  border: 2px solid var(--rule);
+  background: var(--surface-2);
+  box-shadow: var(--card-shadow);
+}
+
+.wi-term-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border-bottom: 2px solid var(--rule);
+  background: var(--surface-3);
+}
+
+.wi-term-btn {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--text-faint);
+}
+
+.wi-term-title {
+  margin-left: 16px;
+  font-size: 15px;
+  color: var(--text-mute);
+  letter-spacing: 0.05em;
+  font-family: var(--font-mono);
+}
+
+.wi-term-body {
+  display: flex;
+  height: 380px;
+}
+
+.wi-term-pane {
+  flex: 1;
+  padding: 20px;
+  border-right: 2px solid var(--rule);
+  font-size: 18px;
+  line-height: 1.8;
+  font-family: var(--font-mono);
+}
+
+.wi-term-pane:last-child {
+  border-right: none;
+}
+
+.wi-pane-label {
+  font-size: 13px;
+  color: var(--text-mute);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
+  font-weight: 600;
+}
+
+.wi-pane-content {
+  color: var(--text-2);
+}
+
+.wi-kw { color: var(--accent); font-weight: 600; }
+.wi-fn { color: var(--text); font-weight: 600; }
+.wi-str { color: #c75b39; }
+.wi-ok { color: var(--accent); font-weight: 700; }
+.wi-run { color: var(--text-mute); }
+
+.wi-term-caption {
+  font-size: 24px;
+  color: var(--text-mute);
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Shortcuts row */
+.wi-shortcuts-row {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+  justify-content: center;
+}
+
+.wi-shortcut {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 20px;
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+}
+
+/* Kbd styles */
+.wi-kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  background: var(--surface-3);
+  border: 1px solid var(--text-faint);
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: var(--font-mono);
+  color: var(--text);
+  font-weight: 600;
+  box-shadow: 0 2px 0 var(--text-faint);
+}
+
+.wi-kbd-plus {
+  font-size: 14px;
+  color: var(--text-mute);
+  font-weight: 500;
+}
+
+.wi-kbd-desc {
+  font-size: 15px;
+  color: var(--text-mute);
+  margin-left: 6px;
+  font-weight: 500;
+}
+
+/* Split shortcuts */
+.wi-split-shortcuts {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.wi-split-short {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 20px;
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+}
+
+/* Hierarchy shortcuts */
+.wi-h-shortcuts {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.wi-h-short {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 24px;
+  background: var(--surface-2);
+  border: 2px solid var(--accent);
+}
+
+/* ── Step 2: Three concepts ── */
+.wi-step2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+  width: 100%;
+}
+
+.wi-concept-label {
+  font-size: 18px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  font-weight: 600;
+}
+
+.wi-concepts {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.wi-concept {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 56px 64px;
+  border: 2px solid var(--rule);
+  background: var(--surface-2);
+  min-width: 280px;
+  box-shadow: var(--card-shadow);
+}
+
+.wi-concept-icon {
+  font-size: 64px;
+  color: var(--accent);
+  text-shadow: 0 0 24px var(--accent-glow);
+  font-weight: 700;
+}
+
+.wi-concept-name {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--text);
+  font-family: var(--font-display-cn);
+}
+
+.wi-concept-en {
+  font-size: 18px;
+  color: var(--text-mute);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.wi-concept-sep {
+  font-size: 40px;
+  color: var(--text-faint);
+  font-weight: 300;
+}
+
+/* ── Step 3: Hierarchy ── */
+.wi-step3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 120px;
+}
+
+.wi-hierarchy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.wi-h-level {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.wi-h-box {
+  padding: 32px 48px;
+  border: 2px solid var(--rule);
+  background: var(--surface-2);
+  text-align: center;
+  box-shadow: var(--card-shadow);
+}
+
+.wi-h-session .wi-h-box {
+  border-color: var(--accent);
+  box-shadow: 0 0 30px rgba(255, 74, 43, 0.1);
+  flex: 1;
+}
+
+.wi-h-sm {
+  padding: 24px 32px;
+  flex: 1;
+}
+
+.wi-h-xs {
+  padding: 20px 28px;
+  font-size: 18px;
+  color: var(--text-2);
+  flex: 1;
+}
+
+.wi-h-label {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+  font-family: var(--font-display-cn);
+}
+
+.wi-h-desc {
+  font-size: 16px;
+  color: var(--text-mute);
+}
+
+.wi-h-arrow {
+  font-size: 32px;
+  color: var(--text-faint);
+  text-align: center;
+  width: 100%;
+}
+
+/* ── Step 4: Split demo ── */
+.wi-step4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+  padding: 0 160px;
+}
+
+.wi-split-label {
+  font-size: 56px;
+  font-weight: 800;
+  color: var(--text);
+  font-family: var(--font-display-cn);
+  letter-spacing: -0.01em;
+}
+
+.wi-split-demo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+  max-width: 800px;
+  height: 480px;
+}
+
+.wi-split-pane {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--rule);
+  background: var(--surface-2);
+  font-size: 22px;
+  box-shadow: var(--card-shadow);
+}
+
+.wi-split-tag {
+  padding: 12px 28px;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  background: var(--accent-soft);
+}
+
+.wi-split-editor { border-color: rgba(255, 74, 43, 0.5); }
+.wi-split-log    { border-color: rgba(255, 74, 43, 0.3); }
+.wi-split-code   { border-color: rgba(255, 74, 43, 0.3); }
+.wi-split-term   { border-color: rgba(255, 74, 43, 0.3); }
