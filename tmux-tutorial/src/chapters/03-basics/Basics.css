@@ -1,0 +1,224 @@
+.bs-scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bs-step0 {
+  text-align: center;
+}
+
+.bs-cmd-line {
+  font-family: var(--font-mono);
+  font-size: 83px;
+  color: var(--text);
+  margin-bottom: 31px;
+  animation: fadeUp 700ms ease-out both;
+}
+
+.bs-prompt {
+  color: var(--text-mute);
+  margin-right: 21px;
+}
+
+.bs-cmd {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.bs-hint {
+  font-family: var(--font-body);
+  font-size: 26px;
+  color: var(--text-mute);
+  animation: fadeUp 700ms 200ms ease-out both;
+}
+
+.bs-term-mockup {
+  width: 300px;
+  background: var(--text);
+  border-radius: var(--r-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-stage);
+  animation: fadeUp 700ms ease-out both;
+}
+
+.bs-term-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 23px;
+  background: rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.bs-term-btn {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--text-mute);
+}
+
+.bs-term-body {
+  padding: 42px;
+  font-family: var(--font-mono);
+  font-size: 23px;
+  min-height: 208px;
+}
+
+.bs-term-content {
+  color: var(--surface-2);
+  line-height: 2;
+}
+
+.bs-status-bar {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  padding: 13px 31px;
+  background: #2d5a27;
+  font-family: var(--font-mono);
+  font-size: 18px;
+  color: #a8d5a2;
+}
+
+.bs-status-seg {
+  color: #a8d5a2;
+}
+
+.bs-status-time {
+  margin-left: auto;
+  color: #7ecf7e;
+}
+
+.bs-status-note {
+  margin-top: 36px;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 26px;
+  color: var(--text-mute);
+  animation: fadeUp 700ms 400ms ease-out both;
+}
+
+.bs-arrow {
+  color: var(--accent);
+  font-size: 36px;
+  margin-right: 10px;
+}
+
+.bs-hierarchy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 21px;
+}
+
+.bs-h-level {
+  display: flex;
+  gap: 26px;
+  animation: fadeUp 700ms ease-out both;
+}
+
+.bs-h-session { animation-delay: 0ms; }
+.bs-h-windows { animation-delay: 250ms; }
+.bs-h-panes   { animation-delay: 500ms; }
+
+.bs-h-arrow {
+  font-size: 36px;
+  color: var(--accent);
+  animation: fadeIn 500ms ease-out both;
+}
+
+.bs-h-box {
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-card);
+  padding: 36px 47px;
+  text-align: center;
+  box-shadow: var(--card-shadow);
+}
+
+.bs-h-sm { padding: 26px 36px; }
+.bs-h-xs { padding: 18px 26px; font-size: 20px; }
+
+.bs-h-icon {
+  font-size: 42px;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.bs-h-name {
+  font-family: var(--font-display-cn);
+  font-size: 29px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.bs-h-desc {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: var(--text-mute);
+  margin-top: 8px;
+}
+
+.bs-concepts {
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+}
+
+.bs-concept {
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-card);
+  padding: 47px 42px;
+  width: 300px;
+  text-align: center;
+  box-shadow: var(--card-shadow);
+  animation: fadeUp 700ms ease-out both;
+}
+
+.bs-concept:nth-child(1) { animation-delay: 0ms; }
+.bs-concept:nth-child(2) { animation-delay: 180ms; }
+.bs-concept:nth-child(3) { animation-delay: 360ms; }
+
+.bs-concept-icon {
+  font-size: 62px;
+  margin-bottom: 21px;
+}
+
+.bs-icon-session { color: var(--accent); }
+.bs-icon-window { color: #c75b39; }
+.bs-icon-pane { color: #8a6d3b; }
+
+.bs-concept-name {
+  font-family: var(--font-display-cn);
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.bs-concept-en {
+  font-family: var(--font-display-en);
+  font-size: 23px;
+  font-style: italic;
+  color: var(--text-faint);
+  margin-top: 5px;
+}
+
+.bs-concept-desc {
+  font-family: var(--font-body);
+  font-size: 20px;
+  color: var(--text-mute);
+  margin-top: 16px;
+  line-height: 1.6;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(31px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

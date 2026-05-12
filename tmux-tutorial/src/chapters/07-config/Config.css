@@ -1,0 +1,182 @@
+.cf-scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cf-label {
+  font-family: var(--font-body);
+  font-size: 23px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  margin-bottom: 42px;
+  text-align: center;
+  animation: fadeUp 700ms ease-out both;
+}
+
+.cf-compare {
+  display: flex;
+  align-items: center;
+  gap: 47px;
+  animation: fadeUp 700ms ease-out both;
+}
+
+.cf-bad, .cf-good {
+  text-align: center;
+  padding: 42px;
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-card);
+  box-shadow: var(--card-shadow);
+  width: 300px;
+}
+
+.cf-bad { border-top: 5px solid var(--text-faint); }
+.cf-good { border-top: 5px solid var(--accent); }
+
+.cf-compare-title {
+  font-family: var(--font-body);
+  font-size: 23px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 26px;
+}
+
+.cf-kbd-big {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 21px;
+}
+
+.cf-kbd-big span {
+  font-family: var(--font-mono);
+  font-size: 42px;
+  font-weight: 700;
+  background: var(--surface-3);
+  padding: 18px 26px;
+  border-radius: 13px;
+  border: 1px solid var(--rule);
+}
+
+.cf-kbd-bad span { color: var(--text-faint); }
+.cf-kbd-good span { color: var(--accent); }
+
+.cf-compare-desc {
+  font-family: var(--font-body);
+  font-size: 20px;
+  color: var(--text-mute);
+}
+
+.cf-vs {
+  font-family: var(--font-display-en);
+  font-size: 36px;
+  font-style: italic;
+  color: var(--text-faint);
+}
+
+.cf-file-label {
+  font-family: var(--font-mono);
+  font-size: 21px;
+  color: var(--text-mute);
+  text-align: center;
+  margin-bottom: 26px;
+  animation: fadeUp 700ms ease-out both;
+}
+
+.cf-code-block {
+  background: var(--text);
+  border-radius: var(--r-card);
+  padding: 42px 47px;
+  font-family: var(--font-mono);
+  font-size: 22px;
+  line-height: 2;
+  color: var(--surface-2);
+  box-shadow: var(--shadow-stage);
+  animation: fadeUp 700ms ease-out both;
+  min-width: 300px;
+}
+
+.cf-comment { color: var(--text-faint); }
+.cf-kw { color: #c9a8e8; }
+
+.cf-apply-label {
+  font-family: var(--font-display-cn);
+  font-size: 55px;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 42px;
+  animation: fadeUp 700ms ease-out both;
+}
+
+.cf-term {
+  width: 300px;
+  background: var(--text);
+  border-radius: var(--r-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-stage);
+  animation: fadeUp 700ms ease-out both;
+}
+
+.cf-term-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 23px;
+  background: rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.cf-term-btn {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--text-mute);
+}
+
+.cf-term-title {
+  margin-left: auto;
+  font-family: var(--font-body);
+  font-size: 17px;
+  color: var(--text-faint);
+}
+
+.cf-term-body {
+  padding: 31px 36px;
+  font-family: var(--font-mono);
+  font-size: 21px;
+  line-height: 2;
+}
+
+.cf-term-line {
+  color: var(--surface);
+  opacity: 0;
+  animation: fadeIn 500ms ease-out forwards;
+}
+
+.cf-term-ok { color: #7ecf7e; animation-delay: 400ms; }
+
+.cf-prompt { color: var(--text-faint); margin-right: 13px; }
+.cf-input { color: var(--surface-2); }
+
+.cf-apply-hint {
+  text-align: center;
+  margin-top: 31px;
+  font-family: var(--font-body);
+  font-size: 23px;
+  color: var(--text-mute);
+  animation: fadeUp 700ms 400ms ease-out both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(26px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

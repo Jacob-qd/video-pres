@@ -1,0 +1,170 @@
+.dt-scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dt-label {
+  font-family: var(--font-body);
+  font-size: 23px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  margin-bottom: 42px;
+  text-align: center;
+  animation: fadeUp 700ms ease-out both;
+}
+
+.dt-flow {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+  animation: fadeUp 700ms ease-out both;
+}
+
+.dt-node {
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-card);
+  padding: 36px 42px;
+  width: 300px;
+  box-shadow: var(--card-shadow);
+}
+
+.dt-node-office { border-left: 5px solid var(--accent); }
+.dt-node-detached { border-left: 5px solid var(--text-faint); opacity: 0.85; }
+
+.dt-node-title {
+  font-family: var(--font-body);
+  font-size: 23px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 21px;
+}
+
+.dt-node-body {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  line-height: 2;
+  color: var(--text-2);
+}
+
+.dt-node-dim { color: var(--text-mute); }
+
+.dt-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.dt-arrow-line {
+  font-size: 47px;
+  color: var(--accent);
+}
+
+.dt-arrow-cmd {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  color: var(--accent);
+  background: var(--surface-3);
+  padding: 8px 16px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.dt-vs-title {
+  font-family: var(--font-display-cn);
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 52px;
+  animation: fadeUp 700ms ease-out both;
+}
+
+.dt-vs-row {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.dt-vs-side {
+  width: 300px;
+  text-align: center;
+  animation: fadeUp 700ms ease-out both;
+}
+
+.dt-vs-bad { animation-delay: 0ms; }
+.dt-vs-good { animation-delay: 200ms; }
+
+.dt-vs-name {
+  font-family: var(--font-body);
+  font-size: 29px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 26px;
+}
+
+.dt-vs-visual {
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-card);
+  padding: 52px 31px;
+  box-shadow: var(--card-shadow);
+  min-height: 208px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dt-vs-skull {
+  font-size: 62px;
+  color: var(--text-faint);
+  margin-bottom: 16px;
+}
+
+.dt-vs-dead {
+  font-family: var(--font-body);
+  font-size: 23px;
+  color: var(--text-mute);
+}
+
+.dt-vs-pulse {
+  font-size: 47px;
+  color: var(--accent);
+  margin-bottom: 10px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.dt-vs-live {
+  font-family: var(--font-body);
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.dt-vs-res {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: var(--text-mute);
+}
+
+.dt-vs-divider {
+  font-family: var(--font-display-en);
+  font-size: 31px;
+  font-style: italic;
+  color: var(--text-faint);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(26px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.9); }
+}

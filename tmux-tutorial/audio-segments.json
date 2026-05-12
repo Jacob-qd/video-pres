@@ -1,0 +1,218 @@
+[
+  {
+    "chapter": "hook",
+    "step": 1,
+    "text": "如果你每天花大量时间在终端里写代码、跑测试、看日志，那这个视频一定要看完。",
+    "audio": "hook/1.mp3"
+  },
+  {
+    "chapter": "hook",
+    "step": 2,
+    "text": "今天我要用十分钟，带你从零开始学会提mux——一个能让你的终端效率翻倍的工具。",
+    "audio": "hook/2.mp3"
+  },
+  {
+    "chapter": "install",
+    "step": 1,
+    "text": "先看怎么装。macOS 上最简单：Brew install 提mux。",
+    "audio": "install/1.mp3"
+  },
+  {
+    "chapter": "install",
+    "step": 2,
+    "text": "Linux 上：sudo APT install 提mux。Windows 用户建议用 WSL，然后在 WSL 里同样用 APT 安装。",
+    "audio": "install/2.mp3"
+  },
+  {
+    "chapter": "install",
+    "step": 3,
+    "text": "装完验证一下：提mux 减 大写V。看到版本号就成功了。",
+    "audio": "install/3.mp3"
+  },
+  {
+    "chapter": "basics",
+    "step": 1,
+    "text": "现在启动提mux：输入提mux，回车。",
+    "audio": "basics/1.mp3"
+  },
+  {
+    "chapter": "basics",
+    "step": 2,
+    "text": "屏幕底部会出现一条绿色的状态栏，说明你已经在提mux 会话里了。",
+    "audio": "basics/2.mp3"
+  },
+  {
+    "chapter": "basics",
+    "step": 3,
+    "text": "提mux 有三个核心概念，搞清楚它们，后面的学习就顺了。第一，会话。会话是最大的容器，你可以把它理解成一个独立的工作空间。关掉终端窗口，会话还在后台跑。",
+    "audio": "basics/3.mp3"
+  },
+  {
+    "chapter": "basics",
+    "step": 4,
+    "text": "第二，窗口。一个会话里可以有多个窗口，每个窗口就是一个全屏标签页，类似于浏览器标签。第三，面板。一个窗口可以分成多个面板，每个面板运行独立的程序。这是提mux 最实用的功能。",
+    "audio": "basics/4.mp3"
+  },
+  {
+    "chapter": "windows",
+    "step": 1,
+    "text": "先说窗口操作。提mux 的默认前缀键是 Control 加 b。按下这个组合键后，提mux 会等待你的下一个指令。",
+    "audio": "windows/1.mp3"
+  },
+  {
+    "chapter": "windows",
+    "step": 2,
+    "text": "新建窗口：前缀键加 c。切换窗口：前缀键加 n 是下一个，前缀键加 p 是上一个。",
+    "audio": "windows/2.mp3"
+  },
+  {
+    "chapter": "windows",
+    "step": 3,
+    "text": "关闭窗口：前缀键加 and 符号。重命名窗口：前缀键加逗号。",
+    "audio": "windows/3.mp3"
+  },
+  {
+    "chapter": "windows",
+    "step": 4,
+    "text": "这些快捷键用几次就记住了。",
+    "audio": "windows/4.mp3"
+  },
+  {
+    "chapter": "panes",
+    "step": 1,
+    "text": "再来说面板，这是真正提升效率的地方。垂直分屏：前缀键加百分号。水平分屏：前缀键加双引号。",
+    "audio": "panes/1.mp3"
+  },
+  {
+    "chapter": "panes",
+    "step": 2,
+    "text": "切换面板：前缀键加方向键。关闭面板：前缀键加 x。调整面板大小：前缀键加按住方向键不放。",
+    "audio": "panes/2.mp3"
+  },
+  {
+    "chapter": "panes",
+    "step": 3,
+    "text": "想象一下，左边写代码，右边跑测试，下面看日志。三个程序在一个窗口里并排显示，手不离开键盘就能切换。",
+    "audio": "panes/3.mp3"
+  },
+  {
+    "chapter": "panes",
+    "step": 4,
+    "text": "这就是面板的力量。一个窗口，多个程序，全部键盘控制。",
+    "audio": "panes/4.mp3"
+  },
+  {
+    "chapter": "panes",
+    "step": 5,
+    "text": "常用分屏快捷键速查：前缀键加百分号纵向分屏，前缀键加双引号横向分屏，前缀键加方向键切换面板。",
+    "audio": "panes/5.mp3"
+  },
+  {
+    "chapter": "detach",
+    "step": 1,
+    "text": "提mux 最炸裂的功能来了：分离和附着。你正在公司电脑上跑了一个长任务，下班了，按前缀键加 d，会话被分离到后台。关掉终端，回家。",
+    "audio": "detach/1.mp3"
+  },
+  {
+    "chapter": "detach",
+    "step": 2,
+    "text": "到家后连上同一台机器，输入提mux attach，整个工作现场原封不动地回到你面前。任务还在跑，编辑器光标还在原来的位置。",
+    "audio": "detach/2.mp3"
+  },
+  {
+    "chapter": "detach",
+    "step": 3,
+    "text": "这比开一堆标签页高级多了。标签页在你关掉终端的那一刻就全没了，提mux 的会话永远挂在后台。",
+    "audio": "detach/3.mp3"
+  },
+  {
+    "chapter": "config",
+    "step": 1,
+    "text": "默认的快捷键有一个问题：Control 加 b 按起来太别扭了。强烈建议改成 Control 加 a。创建点 tmux 配置文件，写入三行：set 减 g prefix 大写C减a，unbind 大写C减b，bind 大写C减a send-prefix。",
+    "audio": "config/1.mp3"
+  },
+  {
+    "chapter": "config",
+    "step": 2,
+    "text": "改完执行提mux source 点 tmux 配置文件 生效。",
+    "audio": "config/2.mp3"
+  },
+  {
+    "chapter": "config",
+    "step": 3,
+    "text": "顺手再改几个设置：set 减 g mouse on 开启鼠标支持。set 减 g status-position top 把状态栏移到顶部。setw 减 g mode-keys vi 把复制模式设成 Vi 风格。",
+    "audio": "config/3.mp3"
+  },
+  {
+    "chapter": "config",
+    "step": 4,
+    "text": "这几行配置一加上，提mux 立刻好用十倍。",
+    "audio": "config/4.mp3"
+  },
+  {
+    "chapter": "copy",
+    "step": 1,
+    "text": "说复制模式。在提mux 里，前缀键加左方括号进入复制模式。这时候你可以像用 Vim 一样浏览历史输出，按空格开始选区，回车复制。",
+    "audio": "copy/1.mp3"
+  },
+  {
+    "chapter": "copy",
+    "step": 2,
+    "text": "如果配置了 Vi 模式，按 h j k l 移动光标，按 v 进入可视模式选中文本，按 y 复制。",
+    "audio": "copy/2.mp3"
+  },
+  {
+    "chapter": "copy",
+    "step": 3,
+    "text": "配合系统剪贴板需要额外配置。macOS 用户加上这行：bind-key 减 T copy-mode-vi y send-keys 减 X copy-pipe-and-cancel p 鼻 copy。Linux 用户把 p 鼻 copy 换成 x 克 lip 或者 x 色欧。配置完，选中的文本直接进系统剪贴板。",
+    "audio": "copy/3.mp3"
+  },
+  {
+    "chapter": "scripting",
+    "step": 1,
+    "text": "高级一点的玩法：脚本化。每次开项目都要手动新建窗口、分屏、切目录，太烦了。用 提muxinator 自动化：gem install 提muxinator。",
+    "audio": "scripting/1.mp3"
+  },
+  {
+    "chapter": "scripting",
+    "step": 2,
+    "text": "然后写一个项目配置文件 点 提muxinator 斜杠 myproject 点 yml：name 冒号 myproject，root 冒号 波浪符 斜杠 code 斜杠 myproject，windows 冒号 editor 布局 main-vertical 面板 vim、npm run dev、git status。",
+    "audio": "scripting/2.mp3"
+  },
+  {
+    "chapter": "scripting",
+    "step": 3,
+    "text": "执行 mux myproject，整个环境一键生成。编辑器在左边，Web 服务器在右上，数据库监控在右下。你坐下来直接写代码就行。",
+    "audio": "scripting/3.mp3"
+  },
+  {
+    "chapter": "plugins",
+    "step": 1,
+    "text": "提mux 的插件生态很成熟。安装 T P M，也就是 Tmux Plugin Manager：git clone 盖特哈布 点 com 斜杠 提mux-plugins 斜杠 tpm 到 点 提mux 斜杠 plugins 斜杠 tpm。",
+    "audio": "plugins/1.mp3"
+  },
+  {
+    "chapter": "plugins",
+    "step": 2,
+    "text": "然后在 点 tmux 配置文件 底部加三行：set 减 g at-plugin 单引号 提mux-plugins 斜杠 tpm 单引号，set 减 g at-plugin 单引号 提mux-plugins 斜杠 提mux-resurrect 单引号，set 减 g at-plugin 单引号 提mux-plugins 斜杠 提mux-continuum 单引号。",
+    "audio": "plugins/2.mp3"
+  },
+  {
+    "chapter": "plugins",
+    "step": 3,
+    "text": "resurrect 能保存和恢复会话布局。continuum 可以自动保存，开机后自动恢复。配置文件最后加一行 run 单引号 波浪符 斜杠 点 提mux 斜杠 plugins 斜杠 tpm 斜杠 tpm 单引号 初始化。保存后，前缀键加 大写I 安装插件，前缀键加 大写U 更新插件。",
+    "audio": "plugins/3.mp3"
+  },
+  {
+    "chapter": "closing",
+    "step": 1,
+    "text": "总结一下今天的内容。我们学了提mux 的安装、会话窗口面板三层结构、基础快捷键、分离附着、配置文件、复制模式、剪贴板集成、脚本化和插件。",
+    "audio": "closing/1.mp3"
+  },
+  {
+    "chapter": "closing",
+    "step": 2,
+    "text": "刚开始可能觉得快捷键太多记不住，别慌。先用起来，常用的那几个用一周就形成肌肉记忆了。我把今天所有的配置代码放到评论区，复制粘贴就能用。还有一份快捷键速查表，建议打印出来贴在显示器旁边。下一期我们聊提mux 的结对编程和更高级的工作流。点赞收藏，下次见。",
+    "audio": "closing/2.mp3"
+  }
+]
